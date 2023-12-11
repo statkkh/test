@@ -39,6 +39,7 @@ function App() {
     <AppWrap>
       <div className="appContentWrap">
         <input
+          className='input'
           type="text"
           placeholder="Input city"
           value={location}
@@ -73,7 +74,9 @@ const AppWrap = styled.div`
     position : absolute;
     padding : 20px;
   }
+
   input {
+    background-color: rgba(0, 255, 255, 0.2);
     border: 2px solid rgba(0, 0, 0, 1);
     padding: 12px;
     border-radius: 16px;
@@ -81,6 +84,7 @@ const AppWrap = styled.div`
 `;
 
 const ResultWrap = styled.div`
+  background-color: rgba(255,0,255,0.25);
   margin-top: 60px;
   padding: 12px;
   border: 1px solid rgba(0, 0, 0, 1);
